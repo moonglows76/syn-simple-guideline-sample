@@ -6,6 +6,7 @@
         <div class="todo-item__status">ステータス：<span class="todo-item__status-name" :class="statusClass(content.status)">{{
           content.status }}</span></div>
         <div class="todo-item__title">内容：{{ content.title }}</div>
+        <div class="todo-item__datetime">{{ useDateWithTime(content.date) }}</div>
       </li>
     </ul>
 
