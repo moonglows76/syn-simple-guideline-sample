@@ -38,13 +38,13 @@ const uncompletedContents = computed(() => {
 });
 
 const statusClass = (status) => {
-  let className = 'is-red';
+  let className = 'todo-item__status-name--red';
   switch (status) {
     case '完了':
-      className = 'is-green'
+      className = 'todo-item__status-name--green'
       break;
     case '作業中':
-      className = 'is-yellow'
+      className = 'todo-item__status-name--yellow'
       break;
     default:
       break;
@@ -55,18 +55,20 @@ const statusClass = (status) => {
 
 <!-- （優先度A）コンポーネント・スコープのスタイリングを使用する -->
 <style lang="scss" scoped>
+// CSSのクラス名にBEMを利用します。
+// コンポーネント内でもクラス名にBEMを利用します。
 .todo-item {
   &__status {
     &-name {
-      &.is-green {
+      &--green {
         color: green;
       }
 
-      &.is-yellow {
+      &--yellow {
         color: goldenrod;
       }
 
-      &.is-red {
+      &--red {
         color: red;
       }
     }
