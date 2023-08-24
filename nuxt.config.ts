@@ -5,5 +5,8 @@ export default defineNuxtConfig({
     head: {
       title: 'シンプルなガイドラインのサンプルソース'
     }
-  }
+  },
+  modules: [
+    '@vueuse/nuxt',
+  ],
 })
