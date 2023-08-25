@@ -3,7 +3,9 @@
 <template>
   <div>
     <TheHeader />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <TheFooter />
   </div>
 </template>
