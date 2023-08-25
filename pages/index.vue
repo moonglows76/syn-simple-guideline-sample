@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h1>シンプルなガイドラインのサンプルソース</h1>
+  <div class="top-page">
+    <h2 class="top-page__title">シンプルなガイドラインのサンプルソース</h2>
     <!-- （優先度B）テンプレート内でのコンポーネント名の形式 -->
-    <TodoItem :contents="contents" />
+    <TodoList :contents="contents" class="top-page__todo-list" />
   </div>
 </template>
 
