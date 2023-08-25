@@ -1,5 +1,5 @@
 <template>
-  <div>フッター</div>
+  <footer>@2023 sample logo</footer>
 </template>
 
 <script setup></script>
